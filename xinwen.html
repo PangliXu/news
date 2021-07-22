@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/xinwen.css" />
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <div class="main">
+
+        <div class="nav">
+            <ul>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">首页</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">了解我们</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">软件介绍</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">新闻信息</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">下载中心</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">招聘英才</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">在线留言</a>
+                </li>
+                <li class="nli">
+                    <a href="#" class="na" onmouseover="on_mouse(this)">论坛</a>
+                </li>
+            </ul>
+            <script>
+                len = document.getElementsByClassName("na").length;
+                a = document.getElementsByClassName("na");
+
+
+
+                function on_mouse(obj) {
+                    var txt = obj.innerHTML;
+                    for (i = 0; i < len; i++) {
+                        if (a[i].innerHTML == txt) {
+                            a[i].style.width = "100px";
+                            a[i].style.height = "40px";
+                            a[i].style.background = "red";
+                        } else {
+                            a[i].style.background = "none";
+                        }
+                    }
+                }
+
+                function init() {
+                    a = document.getElementsByClassName("na");
+                    a[0].style.background = "red";
+                }
+            </script>
+        </div>
+        <div class="img"><img class="img_1" src="images/header1.jpg" alt="" title="" /></div>
+        <div class="content">
+            <div class="c_left">
+                <div class="c_top">
+                    <ul>
+                        <li>
+                            <a href="#">会员中心</a>
+                        </li>
+                        <li>
+                            <a href="#">关于我</a>
+                        </li>
+                        <li>
+                            <a href="#">我的发布</a>
+                        </li>
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">修改ID</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c_middle">
+                    <ul>
+                        <li>
+                            <a href="#">内容管理</a>
+                        </li>
+                        <li>
+                            <a href="#">添加分类</a>
+                        </li>
+                        <li>
+                            <a href="#">分类管理</a>
+                        </li>
+                        <li>
+                            <a href="#">添加新闻</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻管理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c_buttom">
+                    <ul>
+                        <li>
+                            <a href="#">站长菜单</a>
+                        </li>
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c_right">
+                <table>
+                    <tr>
+                        <th>新闻标题</th>
+                        <th>作者</th>
+                        <th>日期</th>
+                        <th colspan="2">操作</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">近百万人参加2020年度国考笔试 平均40人争1岗</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">云南省委原书记秦光荣涉嫌受贿罪被提起公诉</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">较强冷空气来袭 全国多地开启“抖抖抖”模式</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">弹劾调查没完 纽约前市长角逐大选欲击败特朗普</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">习近平：中日两国一衣带水，历史人文渊源深厚</a></td>
+                        <td>aa</td>
+                        <td>2019-11-25</td>
+                        <td><a href="#">编辑</a></td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                </table>
+                <div class="button">
+                    <span>第1页</span>
+                    <span>共1页</span>
+                    <span>第一页</span>
+                    <span>上一页</span>
+                    <span>下一页</span>
+                    <span>最后一页</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f_left">
+                <h2>更多精彩</h2>
+                <div class="f_img">
+                    <img src="images/f_img.png" width="100px;" height="100px;" alt="" />
+                    <div class="sub">
+                        <input type="submit" value="Android版下载">
+                        <input type="submit" value="iPhone版下载">
+                    </div>
+                    <h3>扫描二维码，收看更多新闻</h3>
+                </div>
+            </div>
+            <div class="f_right">
+                <h2>百度新闻独家出品</h2>
+                <ul>
+                    <li>1. 新闻由机器选取每5分钟自动更新</li>
+                    <li>2. 百度新闻搜索源于互联网新闻网站和频道，系统自动分类排序</li>
+                    <li>3. 百度不刊登或转载任何完整的新闻内容</li>
+                </ul>
+            </div>
+            <div class="f_bottom">
+                <span>责任编辑：胡彦BN098 刘石娟BN068 谢建BN085 李芳雨BN091 储信艳BN087 焦碧碧BN084 禤聪BN095 王鑫BN060 崔超BN071 违法和不良信息举报电话：400-921-6911</span>
+                <span>用户协议 隐私策略 投诉中心 京公网安备11000002000001号 互联网新闻信息服务许可 ©2019Baidu 使用百度前必读</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="afternav"></div>
+    <!-- <div class="f_afterbottom1"></div> -->
+    <canvas id="canvas" width:200px; height: 200px; style="background-color: #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        var king = window.screen,
+            w = king.width,
+            h = king.height;
+        canvas.width = w;
+        canvas.height = h;
+
+        var fontSize = 14;
+        var clos = w / fontSize;
+        var str = 'stfgmlbopkfhc'
+
+
+
+        var drops = [];
+        for (i = 0; i < clos; i++) {
+            drops.push(0);
+        }
+
+        function drawString() {
+            ctx.fillStyle = "rgba(0,0,0,0.05)";
+            ctx.fillRect(0, 0, w, h);
+            ctx.font = "700 " + fontSize + "px 微软雅黑";
+            ctx.fillStyle = "#00ff00";
+            for (i = 0; i < clos; i++) {
+                var x = i * fontSize;
+                var y = drops[i] * fontSize;
+                ctx.fillText(Math.floor(Math.random() * str.length), x, y);
+                if (y > h && Math.floor(Math.random() > 0.99)) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(drawString, 30);
+        //console.log(clos)
+    </script>
+</body>
+
+</html>

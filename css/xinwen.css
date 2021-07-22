@@ -1,0 +1,383 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #000;
+    background: #ccc;
+}
+
+.main {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    /* background: rgb(54, 42, 42); */
+}
+
+.img {
+    position: relative;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+    height: 190px;
+    /* background: blue; */
+}
+
+.nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    /* background: red; */
+}
+
+.nav ul {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: rgb(9, 0, 70);
+    height: 40px;
+    list-style: none;
+}
+
+.nav ul li:nth-child(1) {
+    margin-left: 17%;
+    /* background: red; */
+}
+
+.nav ul li {
+    width: 100px;
+    height: 40px;
+    /* background: #000; */
+    float: left;
+    line-height: 40px;
+    text-align: center;
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    /* background: red; */
+}
+
+.content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 690px;
+    border-top: 10px solid #000;
+    background: #fff;
+}
+
+.content .c_left {
+    position: absolute;
+    width: 280px;
+    height: 620px;
+    /* background: cornflowerblue; */
+}
+
+.content .c_left .c_top,
+.c_middle,
+.c_buttom {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    background: crimson;
+}
+
+.content .c_left .c_top {
+    margin-top: 0px;
+}
+
+.c_top ul,
+.c_middle ul,
+.c_buttom ul {
+    width: 100%;
+    height: 200px;
+    list-style: none;
+    background: rgb(241, 241, 241);
+}
+
+.c_top ul li,
+.c_middle ul li,
+.c_buttom ul li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.c_top ul li:nth-child(1),
+.c_middle ul li:nth-child(1),
+.c_buttom ul li:nth-child(1) {
+    background: rgb(9, 0, 70);
+    font-weight: bold;
+}
+
+.content .c_left a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content .c_left a:hover {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.c_top ul li:nth-child(1) a,
+.c_middle ul li:nth-child(1) a,
+.c_buttom ul li:nth-child(1) a {
+    color: #fff;
+}
+
+.content .c_right {
+    position: absolute;
+    top: 0px;
+    left: 280px;
+    width: 920px;
+    height: 620px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content .c_right table {
+    margin-top: 0px;
+    border-spacing: 0px;
+}
+
+.content .c_right table tr {
+    width: 100%;
+    height: 40px;
+}
+
+.content .c_right table tr th {
+    color: #fff;
+    background: red;
+}
+
+.content .c_right table tr {
+    background: #ccc;
+}
+
+.content .c_right table tr td {
+    text-align: center;
+}
+
+.content .c_right table tr:nth-child(2),
+.content .c_right table tr:nth-child(4),
+.content .c_right table tr:nth-child(6),
+.content .c_right table tr:nth-child(6),
+.content .c_right table tr:nth-child(8),
+.content .c_right table tr:nth-child(10),
+.content .c_right table tr:nth-child(12) {
+    color: #fff;
+    background-color: rgb(0, 0, 121);
+}
+
+.content .c_right table tr td a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.content .c_right table tr td a:hover {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.content .c_right table tr td:nth-child(1) {
+    width: 370px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content .c_right table tr td:nth-child(2) {
+    width: 150px;
+}
+
+.content .c_right table tr td:nth-child(3) {
+    width: 200px;
+}
+
+.content .c_right table tr td:nth-child(4) {
+    width: 75px;
+}
+
+.content .c_right table tr td:nth-child(5) {
+    width: 75px;
+}
+
+
+/* .content .c_right table tr td:nth-child(1) a:link {
+    width: 370px;
+    color: darkblue;
+}
+
+.content .c_right table tr td:nth-child(4) a:link {
+    color: darkblue;
+    width: 75px;
+}
+
+.content .c_right table tr td td:nth-child(5) a:link {
+    color: darkblue;
+    width: 75px;
+} */
+
+.button {
+    width: 872px;
+    height: 40px;
+    background: #ccc;
+}
+
+.button span {
+    float: left;
+    width: 145px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: #fff;
+    /* background: #ccc; */
+    cursor: pointer;
+}
+
+.button span:hover {
+    background: red;
+}
+
+.afternav {
+    z-index: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: rgb(9, 0, 70);
+}
+
+#canvas {
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.footer {
+    z-index: 1;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 365px;
+    background: rgb(9, 0, 70);
+}
+
+.footer .f_left {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    width: 250px;
+    height: 300px;
+}
+
+.f_left h2 {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.sub {
+    float: right;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.f_left input {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    background: #fff;
+    opacity: .4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.f_left h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.f_right {
+    position: absolute;
+    left: 580px;
+    top: 40px;
+    width: 500px;
+    height: 300px;
+}
+
+.f_right h2 {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.f_right ul {
+    width: 100%;
+    height: 260px;
+    list-style: none;
+}
+
+.f_right ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.footer .f_bottom {
+    position: absolute;
+    top: 283px;
+    left: 10%;
+    color: #ccc;
+    text-align: center;
+}
+
+.f_bottom span {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+}
+
+
+/* .f_afterbottom1 {
+    z-index: 0;
+    position: absolute;
+    top: 930px;
+    left: 0;
+    width: 100%;
+    height: 365px;
+    background: rgb(9, 0, 70);
+} */
